@@ -1,0 +1,48 @@
+{
+  "name": "@invertase/genkit-plugin-redis",
+  "version": "0.0.1",
+  "description": "A Redis Plugin for Firebase GenKit that integrates Redis for state storage, trace storage, caching, and rate limiting.",
+  "main": "lib/index.js",
+  "type": "commonjs",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node lib/index.js",
+    "build": "tsc",
+    "build:watch": "tsc --watch",
+    "prepare": "npm run build && cd examples && npm install"
+  },
+  "author": "Invertase <oss@invertase.io> (http://invertase.io)",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/invertase/genkit-plugin-redis"
+  },
+  "keywords": [
+    "genkit",
+    "redis",
+    "genkit-plugin"
+  ],
+  "license": "Apache-2.0",
+  "exports": {
+    ".": {
+      "require": "./lib/index.js",
+      "import": "./lib/index.mjs",
+      "types": "./lib/index.d.ts",
+      "default": "./lib/index.js"
+    }
+  },
+  "dependencies": {
+    "@genkit-ai/ai": "^0.5.2",
+    "@genkit-ai/core": "^0.5.2",
+    "@genkit-ai/dotprompt": "^0.5.2",
+    "@genkit-ai/flow": "^0.5.2",
+    "@genkit-ai/google-cloud": "^0.5.2",
+    "@genkit-ai/vertexai": "^0.5.2",
+    "express": "^4.19.2",
+    "ioredis": "^5.4.1",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "typescript": "^5.4.5",
+    "prettier": "^3.3.1"
+  }
+}
