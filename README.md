@@ -19,6 +19,9 @@
 
 ## About
 
+> [!CAUTION]
+> Vectors support is still in development (indexer, embedder, retriever) and not available here.
+
 This plugin facilitates seamless interaction with Redis in GenKit for storing flow states and traces, managing cached data, and implementing rate limiting mechanisms, enhancing the scalability and performance of applications built with the GenKit AI framework.
 
 ```bash
